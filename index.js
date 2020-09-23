@@ -15,14 +15,21 @@ class Bane extends dog{
   }
 
 }
-
-get.color()
-set current(sound) 
-  console.log(howl);
-
+let color = {
+   get color(){
+   return "black"
+    }
+  }
+let sound = {
+   set newSound(sound){
+    return "Howl"
+    }
+  }
 
 let bane = new Bane('GSD', 'Large','Saddle', 'Bark')
 const json = JSON.stringify(bane)
 console.log(json);
 console.log('Woof!');
+console.log(sound);
+console.log(color);
 
